@@ -1,0 +1,167 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Aldrich';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aldrich Regular'), local('Aldrich-Regular'), url(https://fonts.gstatic.com/s/aldrich/v8/TqyqZ92O6-MkXS4JR8sZ6gLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Iceland'), local('Iceland-Regular'), url(https://fonts.gstatic.com/s/iceland/v6/3MJCdMdmaSZmdrTD7pNyygLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+body {
+ font-family: arial;
+ margin: 0;
+}
+
+.nav {
+  position: fixed;
+  /*background-color: #DCDCDC;*/
+  /*background-color: #D36363;*/
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  text-align: center;
+  border-bottom: 1px solid DarkRed;
+}
+
+.nav a {
+  padding: 10px;
+  margin: 20px 20px;
+  background: DarkRed;
+  color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-family: 'Iceland', cursive;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  background: white;
+  border: 1px solid DarkRed;
+  color: DarkRed;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  /*text-transform: uppercase;*/
+  color: DarkRed;
+  font-family: 'Aldrich', cursive;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+h3 {
+  font-family: Arial;
+  font-weight: bold;
+  padding: 20px 0px;
+  color: DarkRed;
+}
+
+p {
+  font-family: Arial;
+  font-size: 16px;
+  color: black;
+  padding: 5px 0px;
+  line-height: 150%
+}
+
+#main {
+  position: absolute;
+  top: 170px;
+  padding: 0px 20px;
+
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid DarkRed;
+  background-color: white;
+  /*background-color: #D36363;*/
+  border-top: 1px solid DarkRed;
+  display: flex;
+  justify-content: center;
+}
+#contact {
+  padding: 0 20px;
+}
+
+#current_week {
+  font-weight: bold;
+  color: DarkRed;
+}
+
+#current_week:after{
+  content: "<--- I am here!";
+  color: red;
+  padding: 50px;
+}
+
+.special {
+  font-size: 12px;
+  color: gray;
+}
+
+ul, li{
+	list-style: square;
+  padding: 5px 20px;
+}
+
+strong {
+  color: DarkRed;
+}
+
+table {
+  height: 40%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 80%;
+}
+
+thead th {
+  background: #8B0000;
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+tr {
+  background: #F5F5F5;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+td {
+  font-size: 14px;
+  padding: 20px;
+  text-align: left;
+}

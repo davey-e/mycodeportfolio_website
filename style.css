@@ -85,6 +85,10 @@ footer {
 
 a {
   text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 20px 0px;
+  color: #328CC1;
 }
 
 h1 {
@@ -146,4 +150,20 @@ ul, li{
 
 strong {
   color: #0B3C5D;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+#project {
+  text-align: center;
+}
+
+#project img {
+  border: 1px solid black;
+  border-radius: 6px;
 }
